@@ -182,10 +182,6 @@ function Home() {
             and content production pipeline. 
             Particularly interested in real-time rendering and building tools 
             that help artists work more effectively in creative environments. </p>
-          <a className="ext_links" href="https://www.linkedin.com/in/clara-p-wang-870976198/">LinkedIn</a>
-          <a className="ext_links" href="https://github.com/claraPochama">GitHub</a>
-          <a className="ext_links" href="mailto:clara900721@gmail.com">Email</a>
-          
           <a className="cta" href="#intro">Back to top</a>
         </div>
       </section>

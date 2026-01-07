@@ -165,19 +165,33 @@ body {
   box-shadow: 0 12px 30px rgba(225, 100, 45, 0.35);
 }
 
-.ext_links {
+.sidebar-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.sidebar-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 22px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  background: var(--accent);
-  color: #fff;
-  box-shadow: 0 12px 30px rgba(225, 100, 45, 0.35);
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
 }
 
+.sidebar-icon img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.sidebar-icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(4px) scale(1.1);
+}
 
 .project-card {
   display: grid;
