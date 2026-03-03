@@ -13,9 +13,16 @@ type ProjectCardProps = {
     thumbnail: string
     alt: string
   }
+  image?: {
+    src: string
+    alt: string
+    caption?: string
+    href?: string
+  }
 }
 
-function ProjectCard({ title, tags, sections, link }: ProjectCardProps) {
+function ProjectCard({ title, tags, sections, link, image }: ProjectCardProps) {
+  const imageHref = image?.href ?? link?.href
   return (
     <div className="project-card">
       <div className="project-card__header">
@@ -43,6 +50,23 @@ function ProjectCard({ title, tags, sections, link }: ProjectCardProps) {
           ))}
         </div>
       </div>
+      {image ? (
+        <div className="project-card__image">
+          {imageHref ? (
+            <a
+              className="project-card__image-link"
+              href={imageHref}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={image.src} alt={image.alt} />
+            </a>
+          ) : (
+            <img src={image.src} alt={image.alt} />
+          )}
+          {image.caption ? <p>{image.caption}</p> : null}
+        </div>
+      ) : null}
       <div className="project-card__sections">
         {sections.map((section) => (
           <div key={section.title} className="project-card__section">
@@ -55,6 +79,7 @@ function ProjectCard({ title, tags, sections, link }: ProjectCardProps) {
           </div>
         ))}
       </div>
+      
     </div>
   )
 }

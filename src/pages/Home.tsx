@@ -34,6 +34,11 @@ function Home() {
                   thumbnail:
                     "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'><rect width='72' height='72' rx='16' fill='%231f1a17'/><text x='36' y='44' font-family='Arial' font-size='22' fill='white' text-anchor='middle'>GH</text></svg>"
                 }}
+                image={{
+                  src: "/assets/presentation-first-mover-advantage.jpg",
+                  alt: "First-Mover Advantage presentation slide", 
+                  href: "https://www.canva.com/design/DAHBzO2lv98/s3Ad0SAPcXDQN5FlfqeVBw/edit?utm_content=DAHBzO2lv98&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                }}
                 sections={[
                   {
                     title: "Problem",
@@ -68,8 +73,10 @@ function Home() {
                     ]
                   }
                 ]}
+                
               />
-            
+              
+                
           </section>
 
 
@@ -133,6 +140,11 @@ function Home() {
                   alt: "D&D Campaign Concept Website repository",
                   thumbnail:
                     "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'><rect width='72' height='72' rx='16' fill='%231f1a17'/><text x='36' y='44' font-family='Arial' font-size='22' fill='white' text-anchor='middle'>GH</text></svg>"
+                }}
+                image={{
+                  src: "/assets/sors-tali.jpg",
+                  alt: "Sors Tali: Concept Website", 
+                  
                 }}
                 sections={[
                   {
@@ -228,10 +240,11 @@ function Home() {
         <div className="section-card contact">
           <h2>Contact</h2>
           <h3>Clara Pei-yu Wang</h3>
+          <p>clara900721@gmail.com | +353 87 492 8615 </p>
+          
           <p>MSc Digital Business graduate with experience in system analysis, interactive development, 
             and content production pipeline. 
-            Particularly interested in real-time rendering and building tools 
-            that help artists work more effectively in creative environments. </p>
+            Particularly interested system analysis and workflow optimization in creative environments. </p>
           <a className="cta" href="#intro">Back to top</a>
         </div>
       </section>

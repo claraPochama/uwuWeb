@@ -29,8 +29,8 @@ body {
   background:
     radial-gradient(900px 600px at 20% 5%, #ffffff 0%, transparent 80%),
     /* radial-gradient(1000px 800px at 90% 20%, var(--accent) 0%, transparent 40%),
-    radial-gradient(800px 800px at 30% 50%, var(--accent-soft) 0%, transparent 40%),
-    radial-gradient(1000px 800px at 90% 85%, var(--muted) 0%, transparent 80%),*/ 
+    radial-gradient(800px 800px at 30% 50%, var(--accent-soft) 0%, transparent 40%),*/ 
+    radial-gradient(1000px 800px at 90% 85%, var(--muted) 0%, transparent 80%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%); 
     min-height: 100vh
 }
@@ -251,6 +251,42 @@ body {
   gap: 12px;
 }
 
+.project-card__image {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+}
+
+.project-card__image-link {
+  width: 85%;
+  display: block;
+  border-radius: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.project-card__image-link:hover {
+  transform: translateX(4px);
+  box-shadow: 0 16px 40px rgba(31, 26, 23, 0.18);
+  filter: saturate(1.04);
+}
+
+.project-card__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+}
+
+.project-card__image > img {
+  width: 85%;
+}
+
+.project-card__image p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(31, 26, 23, 0.7);
+}
+
 .project-card__section h5 {
   margin: 0 0 6px;
   font-size: 0.95rem;
@@ -288,6 +324,10 @@ body {
 .contact a:hover {
   transform: translateX(4px) scale(1.03);
 }
+
+
+
+
 
 @media (max-width: 900px) {
   .sidebar {
