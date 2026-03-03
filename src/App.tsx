@@ -15,8 +15,9 @@ function App() {
           <div className="nav-label">Aim to structure interactive system supporting creative content</div>
           <a className="nav-button" href="/#intro">Intro</a>
           <a className="nav-button" href="/#projects">Projects</a>
-          <a className="nav-button nav-sub" href="/#project_1">01 - Multi-Currency Banking System</a>
-          <a className="nav-button nav-sub" href="/#project_2">02 - D&D Campaign Concept Website</a>
+          <a className="nav-button nav-sub" href="/#project_1">01 - Combat-simulation Analytics</a>
+          <a className="nav-button nav-sub" href="/#project_2">02 - Multi-Currency Banking System</a>
+          <a className="nav-button nav-sub" href="/#project_3">03 - D&D Campaign Concept Website</a>
           <a className="nav-button" href="/#experiements">Experiements</a>
           <a className="nav-button" href="/#contact">Contact</a>
           <div className="sidebar-icons" aria-label="Social links">

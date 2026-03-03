@@ -8,11 +8,11 @@ function Home() {
           <h2 className="lede">About</h2>
           <p>
             This portfolio showcases my interest in building and exploring
-            tools, workflows, and visual systems that support production
-            pipeline. Across interactive projects, system-focused coursework,
+            workflows supporting production pipeline. 
+            Across system-focused coursework, side projects, 
             and visual experiments, I focus on understanding constraints,
-            structuring complexity, and translating creative intent into
-            technical solutions.
+            structuring complexity, to translate creative intent into
+            technical solutions. 
           </p>
         </div>
       </section>
@@ -25,7 +25,57 @@ function Home() {
 
           <section id="project_1" className="section">            
               <ProjectCard
-                title="Project 01 - Multi-Currency Banking System"
+                title="Project 01 - Combat-simulation Analytics for D&D Initiative Mechanics"
+                tags={["SDLC Process", "Python", "SQLite Model", "Data Modeling (ERD)", "Pandas ETL", "Tableau Dashboard", "SQL Analytics"]}
+                link={{
+                  href: "https://github.com/claraPochama/Roll_Initiative_DnDProject",
+                  label: "GitHub repository",
+                  alt: "Multi-Currency Banking System repository",
+                  thumbnail:
+                    "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'><rect width='72' height='72' rx='16' fill='%231f1a17'/><text x='36' y='44' font-family='Arial' font-size='22' fill='white' text-anchor='middle'>GH</text></svg>"
+                }}
+                sections={[
+                  {
+                    title: "Problem",
+                    bullets: [
+                      "Turn-based combat feels like “going first” matters, but playtesting can’t isolate initiative effects because encounters are noisy and decisions vary.",
+                      "Goal: build a controlled, repeatable simulator for 5000+ runs to analyse win rate and survival."
+                    ]
+                  },
+                  {
+                    title: "Constraints",
+                    bullets: [
+                      "Intentional simplification on movement and features to make runs comparable.",
+                      "Over 500+ data are sourced from static CSV files, increasing complexity for data cleaning. ",
+                      "Rules make runs comparable at the cost of tactical variety; results are scenario-specific. "
+                    ]
+                  },
+                  {
+                    title: "Approach",
+                    bullets: [
+                      "Built an end-to-end (SDLC-ish) pipeline: scope/requirements → design (ERD/schema) → build (ETL/simulator) → test/validate (health checks + sanity checks) → deliver (dashboard + report).", 
+                      "Designed a relational model enabling analysis at run-level (win/rounds/damage) and entity-level (initiative order, survival, hits/crits).", 
+                      "Implemented a minimal combat ruleset aligned to the research question. ", 
+                      "Assisted by AI for cleaning and validation on JSON data format and debugging. "
+                    ]
+                  },
+                  {
+                    title: "Outcome",
+                    bullets: [
+                      "Ran 5000 simulated encounters and confirmed initiative advantage correlates with higher win rate, but also showed winning is multi-factor (targeting rules + early burst + survivability). ",
+                      "Enabled state changes such as currency conversion, fee calculation, and history tracking.",
+                      "Quantified the mechanisms and identified a survivability bottleneck (trade-offs under constraints), enabling the plans for v2 simulation and improvement. "
+                    ]
+                  }
+                ]}
+              />
+            
+          </section>
+
+
+          <section id="project_2" className="section">            
+              <ProjectCard
+                title="Project 02 - Multi-Currency Banking System"
                 tags={["Python", "Object-Oriented Design", "System Tooling"]}
                 link={{
                   href: "https://github.com/claraPochama/pythonOOP/tree/main/Coding%20Project-Banking%20System",
@@ -72,10 +122,10 @@ function Home() {
           </section>
           
 
-          <section id="project_2" className="section">
+          <section id="project_3" className="section">
             
               <ProjectCard
-                title="Project 02 - D&D Campaign Concept Website"
+                title="Project 03 - D&D Campaign Concept Website"
                 tags={["JavaScript", "Responsive Web Design", "Creative Concept Design"]}
                 link={{
                   href: "https://github.com/claraPochama/Concept-Website_Sors-Tali",
