@@ -7,12 +7,9 @@ function Home() {
         <div className="section-card hero">
           <h2 className="lede">About</h2>
           <p>
-            This portfolio showcases my interest in building and exploring
-            workflows supporting production pipeline. 
-            Across system-focused coursework, side projects, 
-            and visual experiments, I focus on understanding constraints,
-            structuring complexity, to translate creative intent into
-            technical solutions. 
+            I am a Digital Business student with a strong interest in production workflows, pipeline thinking, and cross-functional problem-solving.
+            Across coursework, self-initiated projects, and visual experiments, I explore how creative goals need to be translated into structured systems and practical technical solutions. 
+            I am building towards work where I can support teams by making complex creative processes clearer and easier to push forward.
           </p>
         </div>
       </section>
