@@ -12,7 +12,6 @@ function App() {
       <div className="app">
         <nav className="sidebar" aria-label="Primary">
           <div className="brand">Clara's Portfolio</div>
-          <div className="nav-label">Aim to structure interactive system supporting creative content</div>
           <a className="nav-button" href="/#intro">Intro</a>
           <a className="nav-button" href="/#projects">Projects</a>
           <a className="nav-button nav-sub" href="/#project_1">01 - D&D Combat Analytics</a>
