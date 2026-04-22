@@ -17,8 +17,6 @@ function Home() {
       <section id="projects" className="section">
         <div className="section-card">
           <h2>Projects</h2>
-          <h4>My projects are focusing on designing structured systems and tools 
-            that operate within real-world production constraints.</h4>
 
           <section id="project_1" className="section">            
               <ProjectCard
@@ -27,7 +25,7 @@ function Home() {
                 link={{
                   href: "https://github.com/claraPochama/Roll_Initiative_DnDProject",
                   label: "GitHub repository",
-                  alt: "Multi-Currency Banking System repository",
+                  alt: "Roll Initiative! Repository",
                   thumbnail:
                     "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'><rect width='72' height='72' rx='16' fill='%231f1a17'/><text x='36' y='44' font-family='Arial' font-size='22' fill='white' text-anchor='middle'>GH</text></svg>"
                 }}
@@ -77,59 +75,9 @@ function Home() {
           </section>
 
 
-          <section id="project_2" className="section">            
+          <section id="project_2" className="section">
               <ProjectCard
-                title="Project 02 - Multi-Currency Banking System"
-                tags={["Python", "Object-Oriented Design", "System Tooling"]}
-                link={{
-                  href: "https://github.com/claraPochama/pythonOOP/tree/main/Coding%20Project-Banking%20System",
-                  label: "GitHub repository",
-                  alt: "Multi-Currency Banking System repository",
-                  thumbnail:
-                    "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'><rect width='72' height='72' rx='16' fill='%231f1a17'/><text x='36' y='44' font-family='Arial' font-size='22' fill='white' text-anchor='middle'>GH</text></svg>"
-                }}
-                sections={[
-                  {
-                    title: "Problem",
-                    bullets: [
-                      "Managing multiple users, currencies, and transactions within a state-driven system.",
-                      "Ensuring data consistency while supporting multiple user actions and system updates."
-                    ]
-                  },
-                  {
-                    title: "Constraints",
-                    bullets: [
-                      "Console-based interaction with linear user flow.",
-                      "No persistent storage or external frameworks.",
-                      "Multiple currencies requiring index-aligned state management."
-                    ]
-                  },
-                  {
-                    title: "Approach",
-                    bullets: [
-                      "Seperated system-level control (Accounts) and user-level data handling (User).",
-                      "Modelled currencies, balances, and transaction history using structured data relationships.",
-                      "Centralised validation and routing logic to prevent state corruption and reduce complexity."
-                    ]
-                  },
-                  {
-                    title: "Outcome",
-                    bullets: [
-                      "Delivered a system that supports additional features and extensible.",
-                      "Enabled state changes such as currency conversion, fee calculation, and history tracking.",
-                      "Applied object-oriented prgramming concept to production-facing systems."
-                    ]
-                  }
-                ]}
-              />
-            
-          </section>
-          
-
-          <section id="project_3" className="section">
-            
-              <ProjectCard
-                title="Project 03 - D&D Campaign Concept Website"
+                title="Project 02 - D&D Campaign Concept Website"
                 tags={["JavaScript", "Responsive Web Design", "Creative Concept Design"]}
                 link={{
                   href: "https://github.com/claraPochama/Concept-Website_Sors-Tali",
@@ -140,8 +88,8 @@ function Home() {
                 }}
                 image={{
                   src: "/assets/sors-tali.jpg",
-                  alt: "Sors Tali: Concept Website", 
-                  
+                  alt: "Sors Tali: Concept Website",
+
                 }}
                 sections={[
                   {
@@ -154,7 +102,7 @@ function Home() {
                   {
                     title: "Constraints",
                     bullets: [
-                      "Narrative-heavy content requiring clear information hierarchy.", 
+                      "Narrative-heavy content requiring clear information hierarchy.",
                       "Front-end only, client-side execution.",
                       "Must remain accessible, responsive, and easy to navigate.",
                     ]
@@ -172,21 +120,79 @@ function Home() {
                     bullets: [
                       "Produced a structured interactive platform supporting creative presentation and functional interaction.",
                       "Improved user navigation through consistent layouts and component logic.",
-                      
+
                     ]
                   }
                 ]}
               />
-            
+
+          </section>
+
+          <section id="project_3" className="section">
+              <ProjectCard
+                title="Project 03 - UCC Claude Builders Club Hackathon 2026"
+                tags={["Hackathon Prototype", "Supabase", "Live Dashboard", "Front-End Implementation", "ESG Reporting"]}
+                link={{
+                  href: "https://github.com/claraPochama/Claude_Builder_Club_Hackathon_Apr2026",
+                  label: "GitHub repository",
+                  alt: "UCC Claude Builders Club Hackathon 2026 repository",
+                  thumbnail:
+                    "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'><rect width='72' height='72' rx='16' fill='%231f1a17'/><text x='36' y='44' font-family='Arial' font-size='22' fill='white' text-anchor='middle'>GH</text></svg>"
+                }}
+                image={{
+                  src: "/assets/Claude_Builder_Club_Hackathon_Apr2026.png",
+                  alt: "UCC Claude Builders Club Hackathon 2026 dashboard screenshot",
+                  href: "https://claude-builder-club-hackathon-apr20.vercel.app/ecoevent-demo.html"
+                }}
+                sections={[
+                  {
+                    title: "Why this mattered",
+                    bullets: [
+                      "Student societies are expected to look professional for sponsorship, but lack ways to demonstrate operational credibility beyond attendance numbers or social reach.",
+                      "As ESG expectations become more visible in corporate partnerships, sustainability transparency can help societies present themselves as more credible partners.",
+                      "Opportunity: turn sustainability from a vague claim into something measurable (material tracking, carbon estimates, and ESG-style reports)."
+                    ]
+                  },
+                  {
+                    title: "What we built",
+                    bullets: [
+                      "A lightweight event sustainability dashboard: log materials, estimate CO₂, monitor trends, and auto-generate ESG-style reports from a single workflow.",
+                    ]
+                  },
+                  {
+                    title: "My contribution",
+                    bullets: [
+                      "Set up the Supabase-backed data layer and implemented live dashboard behaviour.",
+                      "Helped get the prototype deployed as a real browser-based demo.",
+                      "Focused on fast, practical implementation choices to turn a rough concept into a working product; teammates led on feature ideas and product concept."
+                    ]
+                  },
+                  {
+                    title: "What made it hard",
+                    bullets: [
+                      "Only 4 hours, no build system, no server-side secrets, and no usable Claude API key during development.",
+                      "Forced prioritisation of fast deployment and static architecture, instead of a more polished AI workflow."
+                    ]
+                  },
+                  {
+                    title: "Reflection",
+                    bullets: [
+                      "The challenge was not building the perfect architecture, but choosing the minimum viable implementation that still made the concept believable in a live demo.",
+                      "Reinforced that one of my strengths is making early-stage concepts tangible under tight delivery constraints."
+                    ]
+                  }
+                ]}
+              />
+
           </section>
 
         </div>
       </section>
 
-      
 
-      
-      
+
+
+
       <section id="experiements" className="section">
         <div className="section-card">
           <h2>Experiements</h2>
@@ -241,7 +247,7 @@ function Home() {
           
           <p>MSc Digital Business graduate with experience in system analysis, interactive development, 
             and content production pipeline. 
-            Particularly interested system analysis and workflow optimization in creative environments. </p>
+            Particularly interested in production and workflow optimization in creative environments. </p>
           <a className="cta" href="#intro">Back to top</a>
         </div>
       </section>
