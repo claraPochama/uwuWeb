@@ -130,7 +130,7 @@ function Home() {
 
           <section id="project_3" className="section">
               <ProjectCard
-                title="Project 03 - UCC Claude Builders Club Hackathon 2026"
+                title="Project 03 - Claude Builders Club Hackathon - EcoEvent"
                 tags={["Hackathon Prototype", "Supabase", "Live Dashboard", "Front-End Implementation", "ESG Reporting"]}
                 link={{
                   href: "https://github.com/claraPochama/Claude_Builder_Club_Hackathon_Apr2026",
@@ -179,6 +179,57 @@ function Home() {
                     bullets: [
                       "The challenge was not building the perfect architecture, but choosing the minimum viable implementation that still made the concept believable in a live demo.",
                       "Reinforced that one of my strengths is making early-stage concepts tangible under tight delivery constraints."
+                    ]
+                  }
+                ]}
+              />
+
+          </section>
+
+          <section id="project_4" className="section">
+              <ProjectCard
+                title="Project 04 - Claims & Reimbursement Decision-Support DBMS"
+                tags={["MySQL", "SQL", "Data Modelling", "Database Solution"]}
+                link={{
+                  href: "https://github.com/claraPochama/SQL-Case-Study-Analysing-Pharmacy-PCRS-Claim-Rejections-and-Margin-Leakage",
+                  label: "GitHub repository",
+                  alt: "Claims & Reimbursement Decision-Support DBMS repository",
+                  thumbnail:
+                    "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'><rect width='72' height='72' rx='16' fill='%231f1a17'/><text x='36' y='44' font-family='Arial' font-size='22' fill='white' text-anchor='middle'>GH</text></svg>"
+                }}
+                image={{
+                  src: "/assets/PCRS_Pharmacy_Claims_Analytic_Case_Study.jpg",
+                  alt: "PCRS Pharmacy Claims Analytic Case Study",
+                }}
+                sections={[
+                  {
+                    title: "Problem",
+                    bullets: [
+                      "Irish community pharmacies process reimbursement claims under multiple PCRS schemes, each with different eligibility and documentation rules.",
+                      "Small issues in claim data can lead to rejected or adjusted claims, delayed payments, and hidden margin leakage, making it difficult for managers to prioritise audits and monitor financial risk."
+                    ]
+                  },
+                  {
+                    title: "Constraints",
+                    bullets: [
+                      "Individual academic case study rather than a live industry deployment; needed to model a realistic reimbursement workflow credibly within a limited project scope.",
+                      "Balanced business relevance with technical simplicity, using a manageable schema and dummy data rather than a full production-scale pharmacy system."
+                    ]
+                  },
+                  {
+                    title: "Approach",
+                    bullets: [
+                      "Designed and implemented a 7-entity MySQL database modelling the workflow from dispensing events to claim outcomes.",
+                      "Created SQL views and analytical queries to aggregate claim values, isolate the latest review outcome, and surface rejection and adjustment drivers.",
+                      "Estimated margin leakage and ranked high-risk claims for manual review, turning fragmented operational data into structured decision-support outputs."
+                    ]
+                  },
+                  {
+                    title: "Outcome",
+                    bullets: [
+                      "Demonstrated how SQL-based analysis could support pharmacy operations beyond recordkeeping alone.",
+                      "Made it possible to identify high-risk claims, highlight the main causes of reimbursement loss, and estimate low-margin claim patterns.",
+                      "Tracked submit-to-paid latency as a proxy for cashflow risk, supporting better audit focus and earlier issue detection."
                     ]
                   }
                 ]}
